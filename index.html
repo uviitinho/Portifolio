@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--FONTE GOOGLE FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FIM -->
+     <title>Victor França</title>
+    <style>
+
+       #particles-js{
+            background-color:#ff5900 ;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+
+        }
+    </style>
+ 
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <script src="particles.min.js"></script>
+    <script>
+     particlesJS(
+            {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#c8c8c8"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+        )
+    </script>
+
+
+    <header class="header">
+        <a href="#home"class = "logo">
+            França <span>Dev.</span>
+        </a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class = "active">Home</a>
+            <a href="#about">About</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Victor</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
+            <p>Criatividade e inovação andam lado a lado.</p>
+
+
+            <div class="social-icons">
+              <a href="https://www.instagram.com/uviitinho/">
+                <i class='bx bxl-instagram-alt'></i>
+              </a>
+                <a href="https://www.linkedin.com/in/victor-f-b80439208"><i class='bx bxl-linkedin-square' ></i>
+                </a> 
+                <a href="https://github.com/uviitinho"><i class='bx bxl-github'></i>
+                </a> 
+               </div>
+
+            <div class="btn-group">
+             <a href="CV_VICTOR FRANÇA.2024.pdf" class="btn">Curriculo</a>   
+             <a href="#contato" class="btn">Contato</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+           <img src="" alt="">
+        </div>
+     </section> <!--final da  primeira "pagina"-->
+    
+
+     <section class="about" id="about">
+      <div class="about-img">
+          <img src="imagens/about5.png" alt="Foto de perfil de Victor França">
+      </div>
+      <div class="about-content">
+          <h2 class="heading">About <span>Me</span></h2>
+          <h3 class="text-animation">
+             <span></span>
+          </h3>
+          <p>Sou desenvolvedor frontend, com habilidade nas principais tecnologias da área, incluindo JavaScript, React, Redux, Node.js, TypeScript, HTML e CSS. Meu foco é criar interfaces modernas, eficientes e responsivas, garantindo a melhor experiência para o usuário final.
+          </p>
+          <a href="#" class="btn">Certificados</a>
+      </div>
+  </section> <!--final da segunda "pagina"-->
+
+  <section class="habilidades" id="habilidades">
+    <h2 class="heading">Habilidades</h2>
+
+    <div class="habilidade-container">
+      <div class="habilidade-box">
+        <div class="habilidade-info">
+          <i class='bx bxl-figma'></i>
+          <h4>UI / UX Desingn</h4>
+          <p>Um UX/UI Designer cria interfaces digitais que são bonitas, intuitivas e funcionais. "UX" significa Experiência do Usuário e foca em como o usuário interage com o produto, enquanto "UI" refere-se à Interface do Usuário e se concentra na aparência visual.</p>
+        </div>
+      </div>
+
+      <div class="habilidade-box">
+        <div class="habilidade-info">
+          <i class='bx bx-code'></i>
+          <h4>Desenvolvedor Frontend </h4>
+          <p>Um Desenvolvedor Frontend é responsável pela criação da parte visual dos sites e aplicativos com os quais o usuário interage diretamente. Ele usa tecnologias como HTML, CSS e JavaScript para construir interfaces funcionais e atraentes, garantindo uma navegação fluida e intuitiva.</p>
+        </div>
+      </div>
+
+      <div class="habilidade-box">
+        <div class="habilidade-info">
+          <i class='bx bx-code-curly' ></i>
+          <h4>Desenvolvedor Backend </h4>
+          <p>O Desenvolvedor Backend cria a estrutura que sustenta sites e aplicativos. Ele gerencia o servidor, o banco de dados e a lógica de negócios, garantindo que tudo funcione bem "nos bastidores". Usando linguagens como Java, Python, PHP e Node.js, ele facilita o processamento de dados e a comunicação entre o frontend e o servidor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos" id="projetos">
+    <h2 class="heading">Projetos</h2>
+
+    <div class="projetos-box">
+      <div class="projetos-card">
+        <img src="imagens/projeto1.png" alt="">
+
+        <h3>Projeto 1</h3>
+
+        <p>O resultado final é uma interface moderna e funcional, que facilita o acesso dos usuários às principais funcionalidades, como solicitar uma viagem, acompanhar o trajeto em tempo real e realizar o pagamento. O feedback dos testes de usabilidade foi positivo, e os usuários destacaram a facilidade de navegação e o design intuitivo.</p>
+        <a href="link-para-projeto" class="btn">Observe</a>
+      </div>
+
+      <div class="projetos-card">
+        <img src="imagens/projeto2.png" alt="">
+
+        <h3>Projeto 2</h3>
+
+        <p>O resultado final é uma interface moderna e funcional, que facilita o acesso dos usuários às principais funcionalidades, como solicitar uma viagem, acompanhar o trajeto em tempo real e realizar o pagamento. O feedback dos testes de usabilidade foi positivo, e os usuários destacaram a facilidade de navegação e o design intuitivo.</p>
+        <a href="link-para-projeto3" class="btn">Observe</a>
+      </div>
+
+      <div class="projetos-card">
+        <img src="imagens/projeto3.png" alt="">
+
+        <h3>Projeto 3</h3>
+
+        <p>O resultado final é uma interface moderna e funcional, que facilita o acesso dos usuários às principais funcionalidades, como solicitar uma viagem, acompanhar o trajeto em tempo real e realizar o pagamento. O feedback dos testes de usabilidade foi positivo, e os usuários destacaram a facilidade de navegação e o design intuitivo.</p>
+        <a href="link-para-projeto3" class="btn">Observe</a>
+      </div>
+
+      <div class="projetos-card">
+        <img src="imagens/projeto4.png" alt="">
+
+        <h3>Projeto 4</h3>
+
+        <p>O resultado final é uma interface moderna e funcional, que facilita o acesso dos usuários às principais funcionalidades, como solicitar uma viagem, acompanhar o trajeto em tempo real e realizar o pagamento. O feedback dos testes de usabilidade foi positivo, e os usuários destacaram a facilidade de navegação e o design intuitivo.</p>
+        <a href="link-para-projeto3" class="btn">Observe</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2 class="heading">Contato</h2>
+
+    <form action="#">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" placeholder="Nome completo:">
+          <input type="email" placeholder="Email:" >
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Telefone:">
+          <input type="text" placeholder="Assunto:" >
+        </div>
+      </div>
+
+      <div class="input-group-2">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem:" ></textarea>
+        <input type="enviar" value="Enviar mensagem" class="btn">
+        <p></p>
+        <a href="https://wa.me/5511994814535?text=Olá,+gostaria+de+mais+informações." target="_blank" class="btn-whatsapp">
+          <i class='bx bxl-whatsapp'></i> Enviar mensagem no WhatsApp
+      </a>
+
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.instagram.com/uviitinho/">
+                <i class='bx bxl-instagram-alt'></i>
+              </a>
+                <a href="https://www.linkedin.com/in/victor-f-b80439208"><i class='bx bxl-linkedin-square' ></i>
+                </a> 
+                <a href="https://github.com/uviitinho"><i class='bx bxl-github'></i>
+                </a> 
+    </div>
+
+    <ul class="list">
+    
+      <li>
+        <a href="#habilidades">Habilidaes</a>
+      </li>
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+      <li>
+        <a href="#projetos">Projetos</a>
+      </li>
+      <li>
+        <a href="#contato">Contato</a>
+      </li>
+    </ul>
+    <p class="copyright">
+      © Victor França | Todos os direito reservados
+    </p>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
