@@ -651,16 +651,5 @@ footer ul{
 .btn-whatsapp i {
   margin-right: 10px;
 }
-@media (max-width: 768px) {
-  .habilidade-box {
-    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
-  }
-  .habilidade-box:active {
-    background-color: #ff5900;
-    color: var(--main-color);
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-  }
-}
 
 
