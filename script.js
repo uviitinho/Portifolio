@@ -25,29 +25,3 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-// Função para verificar se o elemento está visível na tela
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-// Função para adicionar a classe ao rolar
-function handleScroll() {
-    const habilidadeBoxes = document.querySelectorAll('.habilidade-box');
-    
-    habilidadeBoxes.forEach(box => {
-        if (isElementInViewport(box)) {
-            box.classList.add('scrolled');
-        } else {
-            box.classList.remove('scrolled');
-        }
-    });
-}
-
-// Adiciona o evento de rolagem
-window.addEventListener('scroll', handleScroll);
-
-// Chama a função para garantir que os elementos visíveis na inicialização recebam a classe
-handleScroll();
