@@ -345,7 +345,7 @@
   display: grid;
   grid-template-columns: repeat(3,1fr);
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 .habilidade-box{
   display: flex;
@@ -357,6 +357,7 @@
   border: 5px solid transparent;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  min-height: 600px;
 }
 .habilidade-box:hover{
   background-color:#ff5900 ;
