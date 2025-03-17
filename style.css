@@ -216,23 +216,23 @@
 @keyframes words{
   0%,
   20%{
-    content: "Frontend Designer";
+    content: "Data Scientist";
   }
   21%,
   40%{
-    content: "Dev. de software";
+    content: "Data Scientist";
   }
   41%,
   60%{
-    content: "Web Designer";
+    content: "Data Scientist";
   }
   61%,
   80%{
-    content: "Frontend Designer";
+    content: "Data Scientist";
   }
   81%,
   100%{
-    content: "Dev. de software";
+    content: "Data Scientist";
   }
 }
 @keyframes typing{
