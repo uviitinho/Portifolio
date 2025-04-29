@@ -220,8 +220,10 @@
   }
   21%,
   40%{
-    content: "Data Scientist";
+    content: "Data Scientist"
+    ;
   }
+
   41%,
   60%{
     content: "Data Scientist";
