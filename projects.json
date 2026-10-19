@@ -1,0 +1,43 @@
+[
+  {
+    "titulo": "Site de Previsão do Tempo",
+    "descricao": "Site de previsão do tempo com dados climáticos em tempo real (temperatura, umidade e condições gerais), feito com HTML, CSS, JavaScript e consumo de API. Aprimorou meus conhecimentos em APIs, manipulação de dados e interfaces responsivas.",
+    "imagem": "imagens/projeto2.png",
+    "tags": ["JavaScript", "API REST", "HTML/CSS"],
+    "link": "https://uviitinho.github.io/API/",
+    "visivel": true
+  },
+  {
+    "titulo": "App de Mobilidade (UI/UX)",
+    "descricao": "Interface moderna e funcional para solicitar viagem, acompanhar o trajeto em tempo real e pagar. Os testes de usabilidade destacaram a navegação fácil e o design intuitivo.",
+    "imagem": "imagens/projeto1.png",
+    "tags": ["Figma", "UI/UX"],
+    "link": "",
+    "visivel": true
+  },
+
+  {
+    "titulo": "PREENCHER: Pipeline ETL (ex.: Databricks + PySpark)",
+    "descricao": "Descreva: de onde vêm os dados, o que você transforma, onde grava, qual problema resolve e o resultado (ex.: reduziu tempo de processamento de X para Y).",
+    "imagem": "imagens/projeto3.png",
+    "tags": ["Databricks", "PySpark", "Delta Lake"],
+    "link": "https://github.com/uviitinho/NOME-DO-REPO",
+    "visivel": false
+  },
+  {
+    "titulo": "PREENCHER: Orquestração (ex.: Airflow)",
+    "descricao": "Descreva as DAGs, agendamento, tratamento de falhas e monitoramento.",
+    "imagem": "imagens/projeto4.png",
+    "tags": ["Airflow", "Python", "SQL"],
+    "link": "",
+    "visivel": false
+  },
+  {
+    "titulo": "PREENCHER: Data Warehouse / Modelagem",
+    "descricao": "Descreva a modelagem (star schema, camadas bronze/silver/gold), ferramentas e o que o negócio ganhou.",
+    "imagem": "",
+    "tags": ["SQL", "dbt", "BigQuery"],
+    "link": "",
+    "visivel": false
+  }
+]

@@ -242,69 +242,33 @@
   <section class="projetos" id="projetos">
     <h2 class="heading">Projetos</h2>
 
-    <div class="projetos-box">
-
-      <div class="projetos-card">
-        <img src="imagens/projeto2.png" alt="">
-
-        <h3>Projeto 1</h3>
-
-        <p>Desenvolvi um site de previsão do tempo que exibe dados climáticos em tempo real, como temperatura, umidade e condições gerais, utilizando HTML, CSS, JavaScript e integração com uma API. O projeto aprimorou meus conhecimentos em consumo de APIs, manipulação de dados e criação de interfaces responsivas e interativas.</p>
-        <a href="https://uviitinho.github.io/API/" class="btn">Observe</a>
-      </div>
-
-      <div class="projetos-card">
-        <img src="imagens/projeto1.png" alt="">
-        
-        <h3>Projeto 2</h3>
-        
-        <p>O resultado final é uma interface moderna e funcional, que facilita o acesso dos usuários às principais funcionalidades, como solicitar uma viagem, acompanhar o trajeto em tempo real e realizar o pagamento. O feedback dos testes de usabilidade foi positivo, e os usuários destacaram a facilidade de navegação e o design intuitivo.</p>
-        <a href="link-para-projeto" class="btn">Projeto em atualização: novas melhorias e recursos em breve!</a>
-        </div>
-
-      <div class="projetos-card">
-        <img src="imagens/projeto3.png" alt="">
-
-        <h3>Projeto 3</h3>
-
-        <p>O resultado final é uma interface moderna e funcional, que facilita o acesso dos usuários às principais funcionalidades, como solicitar uma viagem, acompanhar o trajeto em tempo real e realizar o pagamento. O feedback dos testes de usabilidade foi positivo, e os usuários destacaram a facilidade de navegação e o design intuitivo.</p>
-        <a href="link-para-projeto3" class="btn">Projeto em atualização: novas melhorias e recursos em breve!</a>
-      </div>
-
-      <div class="projetos-card">
-        <img src="imagens/projeto4.png" alt="">
-
-        <h3>Projeto 4</h3>
-
-        <p>O resultado final é uma interface moderna e funcional, que facilita o acesso dos usuários às principais funcionalidades, como solicitar uma viagem, acompanhar o trajeto em tempo real e realizar o pagamento. O feedback dos testes de usabilidade foi positivo, e os usuários destacaram a facilidade de navegação e o design intuitivo.</p>
-        <a href="link-para-projeto3" class="btn">Projeto em atualização: novas melhorias e recursos em breve!</a>
-      </div>
-    </div>
+    <div class="projetos-box" id="projetos-box"></div>
   </section>
 
   <section class="contato" id="contato">
     <h2 class="heading">Contato</h2>
 
-    <form action="#">
+    <form id="contact-form" novalidate>
       <div class="input-group">
         <div class="input-box">
-          <input type="text" placeholder="Nome completo:">
-          <input type="email" placeholder="Email:" >
+          <input type="text" name="nome" placeholder="Nome completo:" required maxlength="100">
+          <input type="email" name="email" placeholder="Email:" required maxlength="150">
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Telefone:">
-          <input type="text" placeholder="Assunto:" >
+          <input type="tel" name="telefone" placeholder="Telefone:" maxlength="20">
+          <input type="text" name="assunto" placeholder="Assunto:" required maxlength="150">
         </div>
       </div>
 
       <div class="input-group-2">
-        <textarea name="" id="" cols="30" rows="10" placeholder="O modo de contato por e-mail está sendo atualizado. Por favor, mande no WhatsApp! ⬇" ></textarea>
-        <input type="button" value="Enviar mensagem" class="btn">
-        <p></p>
+        <textarea name="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem:" required minlength="10" maxlength="3000"></textarea>
+        <!-- Honeypot anti-spam: invisível para pessoas -->
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <button type="submit" id="submit-btn" class="btn">Enviar mensagem</button>
+        <p id="form-status" class="form-status" role="status"></p>
         <a href="https://wa.me/5511994814535?text=Olá,+gostaria+de+mais+informações." target="_blank" class="btn-whatsapp">
           <i class='bx bxl-whatsapp'></i> Enviar mensagem no WhatsApp
-      </a>
-
+        </a>
       </div>
     </form>
   </section>
@@ -340,6 +304,7 @@
     </p>
   </footer>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
