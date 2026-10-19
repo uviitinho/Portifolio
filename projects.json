@@ -1,43 +1,55 @@
 [
   {
-    "titulo": "Site de Previsão do Tempo",
-    "descricao": "Site de previsão do tempo com dados climáticos em tempo real (temperatura, umidade e condições gerais), feito com HTML, CSS, JavaScript e consumo de API. Aprimorou meus conhecimentos em APIs, manipulação de dados e interfaces responsivas.",
-    "imagem": "imagens/projeto2.png",
-    "tags": ["JavaScript", "API REST", "HTML/CSS"],
-    "link": "https://uviitinho.github.io/API/",
-    "visivel": true
-  },
-  {
-    "titulo": "App de Mobilidade (UI/UX)",
-    "descricao": "Interface moderna e funcional para solicitar viagem, acompanhar o trajeto em tempo real e pagar. Os testes de usabilidade destacaram a navegação fácil e o design intuitivo.",
-    "imagem": "imagens/projeto1.png",
-    "tags": ["Figma", "UI/UX"],
+    "titulo": "Agentes de IA com Genie Space",
+    "descricao": "Pioneiro na adoção do Genie Space na Vivo, defini padrões de desenvolvimento e disseminei boas práticas para o time. Liderei agentes de IA estratégicos: Painel Líder (todos os indicadores de vendas em um único agente, o mais usado pelos executivos), HAC (telemetria HGU para identificar falhas preventivamente), Raio-X do Cliente e Market Share.",
+    "imagem": "imagens/projeto-genie.jpg",
+    "tags": [
+      "Databricks",
+      "Genie Space",
+      "Agentes de IA",
+      "Python"
+    ],
     "link": "",
     "visivel": true
   },
-
   {
-    "titulo": "PREENCHER: Pipeline ETL (ex.: Databricks + PySpark)",
-    "descricao": "Descreva: de onde vêm os dados, o que você transforma, onde grava, qual problema resolve e o resultado (ex.: reduziu tempo de processamento de X para Y).",
-    "imagem": "imagens/projeto3.png",
-    "tags": ["Databricks", "PySpark", "Delta Lake"],
-    "link": "https://github.com/uviitinho/NOME-DO-REPO",
-    "visivel": false
+    "titulo": "Migração de 486 Pipelines para o Databricks",
+    "descricao": "Migração de 486 pipelines do Oracle Informatica PowerCenter para o Databricks Unity Catalog, usando LakeBridge (BladeBridge) para converter mapas PowerCenter em notebooks Spark e arquivos YAML compatíveis com os padrões do Databricks SDK.",
+    "imagem": "imagens/projeto-migracao.jpg",
+    "tags": [
+      "Informatica",
+      "LakeBridge",
+      "Unity Catalog",
+      "Spark",
+      "YAML"
+    ],
+    "link": "",
+    "visivel": true
   },
   {
-    "titulo": "PREENCHER: Orquestração (ex.: Airflow)",
-    "descricao": "Descreva as DAGs, agendamento, tratamento de falhas e monitoramento.",
-    "imagem": "imagens/projeto4.png",
-    "tags": ["Airflow", "Python", "SQL"],
+    "titulo": "Modernização do Score HGU (SAS → Databricks)",
+    "descricao": "Responsável por migrar o modelo de Score HGU de clientes do SAS para o Databricks. Analisei a lógica de negócio, fiz engenharia reversa dos processos existentes e reconstruí a solução em PySpark, em arquitetura moderna e escalável para monitorar a propensão ao churn.",
+    "imagem": "imagens/projeto-score.jpg",
+    "tags": [
+      "PySpark",
+      "SAS",
+      "Databricks",
+      "Churn"
+    ],
     "link": "",
-    "visivel": false
+    "visivel": true
   },
   {
-    "titulo": "PREENCHER: Data Warehouse / Modelagem",
-    "descricao": "Descreva a modelagem (star schema, camadas bronze/silver/gold), ferramentas e o que o negócio ganhou.",
-    "imagem": "",
-    "tags": ["SQL", "dbt", "BigQuery"],
+    "titulo": "Engenharia de Dados e IA para Lojas Próprias",
+    "descricao": "Arquitetura completa de engenharia de dados e agentes de IA para consultas de performance de vendas das lojas próprias da Vivo, com Databricks SDK, SCD Tipo 1 e 2, CDC e integração com Blob Storage. Usada pela alta liderança para decisões estratégicas.",
+    "imagem": "imagens/projeto-lojas.jpg",
+    "tags": [
+      "Databricks SDK",
+      "SCD 1/2",
+      "CDC",
+      "Blob Storage"
+    ],
     "link": "",
-    "visivel": false
+    "visivel": true
   }
 ]

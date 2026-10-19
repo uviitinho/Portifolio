@@ -53,7 +53,7 @@ async function carregarProjetos() {
       card.append(
         p.link
           ? el('a', { href: p.link, className: 'btn', target: '_blank', rel: 'noopener', textContent: 'Observe' })
-          : el('a', { className: 'btn', textContent: 'Em atualização' })
+          : el('a', { className: 'btn', textContent: 'Projeto Corporativo' })
       );
       box.append(card);
     });
