@@ -27,8 +27,8 @@
     "visivel": true
   },
   {
-    "titulo": "Modernização do Score HGU (SAS → Databricks)",
-    "descricao": "Responsável por migrar o modelo de Score HGU de clientes do SAS para o Databricks. Analisei a lógica de negócio, fiz engenharia reversa dos processos existentes e reconstruí a solução em PySpark, em arquitetura moderna e escalável para monitorar a propensão ao churn.",
+    "titulo": "Score HGU: ownership e redesenho em Medallion",
+    "descricao": "Assumi o ownership do Score HGU, originalmente sob responsabilidade de um gerente sênior. Fiz engenharia reversa da lógica do SAS e redesenhei a solução em PySpark com arquitetura Medallion (Bronze, Silver e Gold), aprovada pela liderança da área para monitorar a propensão ao churn.",
     "imagem": "imagens/projeto-score.jpg",
     "tags": [
       "PySpark",

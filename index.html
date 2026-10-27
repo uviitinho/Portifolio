@@ -1,310 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--FONTE GOOGLE FONTE-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victor França · Analytics Engineer</title>
+<meta name="description" content="Victor França, Analytics Engineer. Databricks, PySpark e arquitetura Lakehouse: pipelines ETL/ELT, governança com Unity Catalog e IA generativa com Genie Space.">
+<meta name="theme-color" content="#0f0806">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--FIM -->
-     <title>Victor França</title>
-    <style>
-
-       #particles-js{
-            background-color:#ff5900 ;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            z-index: -1;
-
-        }
-    </style>
- 
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
 
-    <div id="particles-js"></div>
+<header class="nav" id="nav">
+  <a href="#top" class="logo" aria-label="França.dados, início">França<b>.</b>dados</a>
+  <nav class="links" aria-label="Seções">
+    <a href="#metodo">Método</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="kbd-btn" id="open-palette" type="button" aria-label="Abrir paleta de comandos"><span>Buscar</span><kbd>Ctrl K</kbd></button>
+    <a class="pill" href="imagens/CV_Victor_Franca.pdf" target="_blank" rel="noopener">Currículo</a>
+  </div>
+</header>
 
-    <script src="particles.min.js"></script>
-    <script>
-     particlesJS(
-            {
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#c8c8c8"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}
-        )
-    </script>
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <canvas id="flow" aria-hidden="true"></canvas>
+    <div class="hero-shade" aria-hidden="true"></div>
 
-
-    <header class="header">
-        <a href="#home"class = "logo">
-            França <span>Dev.</span>
-        </a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" class = "active">Home</a>
-            <a href="#about">About</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Victor</span></h1>
-            <h3 class="text-animation">
-                I'm a <span></span>
-            </h3>
-            <p>Criatividade e inovação andam lado a lado.</p>
-
-
-            <div class="social-icons">
-              <a href="https://www.instagram.com/uviitinho/">
-                <i class='bx bxl-instagram-alt'></i>
-              </a>
-              <a href="https://www.linkedin.com/in/victorfrançati" target="_blank">
-                <i class='bx bxl-linkedin-square'></i>
-              </a>
-                <a href="https://github.com/uviitinho"><i class='bx bxl-github'></i>
-                </a> 
-               </div>
-
-            <div class="btn-group">
-             <a href="imagens/CV - VICTOR FRANÇA.pdf" class="btn">Curriculo</a>   
-             <a href="#contato" class="btn">Contato</a>
-            </div>
-        </div>
-
-        <div class="home-img">
-           <img src="" alt="">
-        </div>
-     </section> <!--final da  primeira "pagina"-->
-    
-
-     <section class="about" id="about">
-      <div class="about-img">
-          <img src="imagens/databricks.jpeg" alt="Foto de perfil de Victor França">
+    <div class="hero-inner">
+      <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>Analytics Engineer · Databricks · Vivo</p>
+      <h1 class="hero-title">
+        <span class="line"><span>Dados brutos entram.</span></span>
+        <span class="line"><span><em>Decisões</em> saem.</span></span>
+      </h1>
+      <p class="hero-lead reveal">Sou Victor França. Construo pipelines ETL/ELT em Databricks na arquitetura Medallion, com governança no Unity Catalog e IA generativa com Genie Space.</p>
+      <div class="hero-cta reveal">
+        <a class="btn" href="#projetos">Ver projetos <span aria-hidden="true">→</span></a>
+        <a class="btn ghost" href="#contato">Falar comigo</a>
       </div>
-      <div class="about-content">
-          <h2 class="heading">About <span>Me</span></h2>
-          <h3 class="text-animation">
-             <span></span>
-          </h3>
-          <p>Sou Victor França, Data Scientist em formação, atuando com Big Data, BI, IA e Databricks. Transformo dados em insights estratégicos, unindo machine learning e engenharia de dados para criar soluções inteligentes e eficientes. 
-          </p>
-          <a href="#" class="btn">Certificados em atualização!</a>
-      </div>
-  </section> <!--final da segunda "pagina"-->
+    </div>
 
-  <section class="habilidades" id="habilidades">
-    <h2 class="heading">Habilidades</h2>
+    <dl class="hero-stats">
+      <div class="reveal"><dt><span data-count="486">0</span></dt><dd>pipelines migrados do Informatica para o Unity Catalog</dd></div>
+      <div class="reveal"><dt>Score HGU</dt><dd>assumi o ownership, fiz engenharia reversa e redesenhei em Medallion</dd></div>
+      <div class="reveal"><dt>AI Days</dt><dd>projeto de IA/BI selecionado e apresentado no Databricks AI Days</dd></div>
+      <div class="reveal"><dt><span data-count="5">0</span></dt><dd>certificações pela Databricks Academy</dd></div>
+    </dl>
+  </section>
 
-    <div class="habilidade-container">
-      <div class="habilidade-box">
-        <div class="habilidade-info">
-          <i class='bx bxl-figma'></i>
-          <h4> UI / UX Desingn</h4>
-          <p>Um UX/UI Designer cria interfaces digitais que são bonitas, intuitivas e funcionais. "UX" significa Experiência do Usuário e foca em como o usuário interage com o produto, enquanto "UI" refere-se à Interface do Usuário e se concentra na aparência visual.</p>
-        </div>
-      </div>
+  <!-- STACK -->
+  <div class="marquee" aria-label="Tecnologias">
+    <div class="marquee-track">
+      <span>Databricks</span><span>Delta Lake</span><span>PySpark</span><span>Spark SQL</span><span>Unity Catalog</span><span>Workflows</span><span>Genie Space</span><span>MLflow</span><span>Databricks SDK</span><span>Oracle</span><span>PowerCenter</span><span>MySQL</span><span>Git</span>
+      <span aria-hidden="true">Databricks</span><span aria-hidden="true">Delta Lake</span><span aria-hidden="true">PySpark</span><span aria-hidden="true">Spark SQL</span><span aria-hidden="true">Unity Catalog</span><span aria-hidden="true">Workflows</span><span aria-hidden="true">Genie Space</span><span aria-hidden="true">MLflow</span><span aria-hidden="true">Databricks SDK</span><span aria-hidden="true">Oracle</span><span aria-hidden="true">PowerCenter</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">Git</span>
+    </div>
+  </div>
 
-      <div class="habilidade-box">
-        <div class="habilidade-info">
-          <i class='bx bxs-data' ></i>
-          <h4>Cientista de Dados</h4>
-          <p>Um Cientista de Dados transforma grandes volumes de dados em insights valiosos, utilizando estatística, machine learning e programação. Ele trabalha com tecnologias como Python, SQL, Databricks e Hadoop para analisar, modelar e prever tendências, ajudando na tomada de decisões estratégicas baseadas em dados.</p>
-        </div>
-      </div>
+  <!-- MÉTODO -->
+  <section class="method" id="metodo">
+    <div class="method-head">
+      <p class="label">01 / Método</p>
+      <h2>Cada dado passa por três camadas antes de chegar a quem decide.</h2>
+      <div class="method-progress" aria-hidden="true"><i id="method-bar"></i></div>
+    </div>
+    <ol class="layers">
+      <li class="layer" data-layer="bronze">
+        <span class="layer-tag">bronze</span>
+        <h3>Ingerir sem perder nada</h3>
+        <p>Trago o dado como ele nasce, com ingestão incremental de bancos como o Oracle VIC via Databricks SDK. Nada é descartado e tudo fica rastreável no Unity Catalog.</p>
+        <code>oracle → sdk → delta (raw)</code>
+      </li>
+      <li class="layer" data-layer="silver">
+        <span class="layer-tag">silver</span>
+        <h3>Limpar, versionar, confiar</h3>
+        <p>Padronizo, deduplico e versiono em Delta Tables com PySpark e Spark SQL, orquestrado por Databricks Workflows. É aqui que a regra de negócio, às vezes recuperada por engenharia reversa, vira código.</p>
+        <code>dedupe → merge → delta table</code>
+      </li>
+      <li class="layer" data-layer="gold">
+        <span class="layer-tag">gold</span>
+        <h3>Servir para decidir</h3>
+        <p>Tabelas prontas para consumo, modelos acompanhados no MLflow e agentes de IA generativa com Genie Space que respondem perguntas de negócio em linguagem natural.</p>
+        <code>serve → genie agent → decisão</code>
+      </li>
+    </ol>
+  </section>
 
-      <div class="habilidade-box">
-        <div class="habilidade-info">
-          <i class='bx bx-code-curly' ></i>
-          <h4>Desenvolvedor Backend </h4>
-          <p>O Desenvolvedor Backend cria a estrutura que sustenta sites e aplicativos. Ele gerencia o servidor, o banco de dados e a lógica de negócios, garantindo que tudo funcione bem "nos bastidores". Usando linguagens como Java, Python, PHP e Node.js, ele facilita o processamento de dados e a comunicação entre o frontend e o servidor.</p>
-        </div>
-      </div>
+  <!-- PROJETOS -->
+  <section class="work" id="projetos">
+    <div class="section-head">
+      <p class="label">02 / Projetos</p>
+      <h2>Trabalho real, em produção.</h2>
+    </div>
+    <ol class="work-list" id="work-list"></ol>
+    <div class="cursor-preview" id="cursor-preview" aria-hidden="true"><img alt=""></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <figure class="about-photo reveal">
+      <img src="imagens/databricks.jpeg" alt="Victor França em evento da Databricks" loading="lazy">
+      <figcaption>Databricks · São Paulo</figcaption>
+    </figure>
+    <div class="about-text">
+      <p class="label">03 / Sobre</p>
+      <h2 class="reveal">Coloco dados confiáveis na mão de quem decide.</h2>
+      <p class="reveal">Sou Analytics Engineer na Vivo, focado em Databricks e arquitetura Lakehouse. Gosto do trabalho que ninguém vê: entender a regra escondida no legado, integrar dados críticos com rastreabilidade e transformar tudo em pipelines escaláveis e governados. Ajudei a levar o Genie Space, a IA generativa do Databricks, para o dia a dia da área.</p>
+      <ul class="facts reveal">
+        <li><b>Databricks</b><span>Lakehouse, Unity Catalog, Workflows, Repos</span></li>
+        <li><b>Dados</b><span>PySpark, Spark SQL, Delta Lake, ETL/ELT</span></li>
+        <li><b>Qualidade</b><span>Data Governance, versionamento de dados</span></li>
+        <li><b>ML e IA</b><span>MLflow, Machine Learning, Genie Space</span></li>
+      </ul>
     </div>
   </section>
 
-  <section class="projetos" id="projetos">
-    <h2 class="heading">Projetos</h2>
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="contact-head">
+      <p class="label">04 / Contato</p>
+      <h2 class="big reveal">Tem um dado difícil de colocar para trabalhar?</h2>
+      <p class="reveal">A mensagem chega direto em victor25franca@gmail.com. Se preferir algo mais rápido, me chame no WhatsApp.</p>
+      <p class="contact-links reveal">
+        <a href="https://wa.me/5511994814535?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio." target="_blank" rel="noopener">WhatsApp ↗</a>
+        <a href="https://www.linkedin.com/in/victor-fran%C3%A7a-b80439208" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/uviitinho" target="_blank" rel="noopener">GitHub ↗</a>
+      </p>
+    </div>
 
-    <div class="projetos-box" id="projetos-box"></div>
-  </section>
-
-  <section class="contato" id="contato">
-    <h2 class="heading">Contato</h2>
-
-    <form id="contact-form" novalidate>
-      <div class="input-group">
-        <div class="input-box">
-          <input type="text" name="nome" placeholder="Nome completo:" required maxlength="100">
-          <input type="email" name="email" placeholder="Email:" required maxlength="150">
-        </div>
-        <div class="input-box">
-          <input type="tel" name="telefone" placeholder="Telefone:" maxlength="20">
-          <input type="text" name="assunto" placeholder="Assunto:" required maxlength="150">
-        </div>
-      </div>
-
-      <div class="input-group-2">
-        <textarea name="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem:" required minlength="10" maxlength="3000"></textarea>
-        <!-- Honeypot anti-spam: invisível para pessoas -->
-        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-        <button type="submit" id="submit-btn" class="btn">Enviar mensagem</button>
-        <p id="form-status" class="form-status" role="status"></p>
-        <a href="https://wa.me/5511994814535?text=Olá,+gostaria+de+mais+informações." target="_blank" class="btn-whatsapp">
-          <i class='bx bxl-whatsapp'></i> Enviar mensagem no WhatsApp
-        </a>
+    <form class="form" id="contact-form" novalidate>
+      <div class="field"><input id="f-nome" name="nome" required minlength="2" maxlength="100" autocomplete="name" placeholder=" "><label for="f-nome">Nome</label></div>
+      <div class="field"><input id="f-email" type="email" name="email" required maxlength="150" autocomplete="email" placeholder=" "><label for="f-email">E-mail</label></div>
+      <div class="field"><input id="f-tel" type="tel" name="telefone" maxlength="20" autocomplete="tel" placeholder=" "><label for="f-tel">Telefone (opcional)</label></div>
+      <div class="field"><input id="f-assunto" name="assunto" required maxlength="150" placeholder=" "><label for="f-assunto">Assunto</label></div>
+      <div class="field wide"><textarea id="f-msg" name="mensagem" rows="4" required minlength="10" maxlength="3000" placeholder=" "></textarea><label for="f-msg">Mensagem</label></div>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="form-foot wide">
+        <button class="btn" id="submit-btn" type="submit">Enviar mensagem <span aria-hidden="true">→</span></button>
+        <pre class="log" id="form-log" role="status" aria-live="polite"></pre>
       </div>
     </form>
   </section>
+</main>
 
-  <footer class="footer">
-    <div class="social">
-      <a href="https://www.instagram.com/uviitinho/">
-                <i class='bx bxl-instagram-alt'></i>
-              </a>
-                <a href="https://www.linkedin.com/in/victorfrançati"><i class='bx bxl-linkedin-square' ></i>
-                </a> 
-                <a href="https://github.com/uviitinho"><i class='bx bxl-github'></i>
-                </a> 
-    </div>
+<footer class="footer">
+  <span>© <span id="year"></span> Victor França</span>
+  <span class="mono">São Paulo · <span id="clock">--:--</span></span>
+  <a href="#top">Voltar ao topo ↑</a>
+</footer>
 
-    <ul class="list">
-    
-      <li>
-        <a href="#habilidades">Habilidaes</a>
-      </li>
-      <li>
-        <a href="#about">About Me</a>
-      </li>
-      <li>
-        <a href="#projetos">Projetos</a>
-      </li>
-      <li>
-        <a href="#contato">Contato</a>
-      </li>
-    </ul>
-    <p class="copyright">
-      © Victor França | Todos os direito reservados
-    </p>
-  </footer>
+<dialog class="palette" id="palette" aria-label="Paleta de comandos">
+  <input id="palette-input" type="text" placeholder="Para onde você quer ir?" autocomplete="off" aria-controls="palette-list">
+  <ul id="palette-list" role="listbox"></ul>
+  <p class="palette-hint mono">↑ ↓ para navegar · Enter para abrir · Esc para fechar</p>
+</dialog>
 
-    <script src="config.js"></script>
-    <script src="script.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
